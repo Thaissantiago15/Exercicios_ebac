@@ -13,7 +13,7 @@
             Quando selecionar <tamanho>
             E a <cor>
             E a <quantidade>
-            Então resultado seria <carrinho>
+            Então deve aparecer a mensagem do <carrinho>
 
 
             Exemplos:
@@ -22,6 +22,14 @@
             |         | "orange" | "1"        | não adicionar ao carrinho |
             | "m"     |          | "1"        | não adicionar ao carrinho |
             | "g"     | "red"    |            | não adicionar ao carrinho |
+
+            Cenário: Deve permitir apenas 10 produtos 
+            Quando eu selecionar <9> produtos 
+            Então deve inserir no <carrinho> 
+
+            Cenário: Limpar Dados
+            Quando eu clicar no botão <limpar> 
+            Então deve voltar voltar ao estado <inicial>  
 
             
 
