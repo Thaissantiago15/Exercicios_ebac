@@ -24,12 +24,12 @@
             | "g"     | "red"    |            | não adicionar ao carrinho |
 
             Cenário: Deve permitir apenas 10 produtos 
-            Quando eu selecionar <9> produtos 
-            Então deve inserir no <carrinho> 
+            Quando eu selecionar "9" produtos 
+            Então deve inserir no "carrinho"
 
             Cenário: Limpar Dados
-            Quando eu clicar no botão <limpar> 
-            Então deve voltar voltar ao estado <inicial>  
+            Quando eu clicar no botão "limpar"
+            Então deve voltar ao estado "inicial"
 
             
 

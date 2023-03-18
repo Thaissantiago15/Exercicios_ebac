@@ -7,29 +7,15 @@ Para finalizar minha compra
 
 Cenário: Dados Obrigatorios 
 Dado que eu acesse a pagina de Checkout 
-Quando eu digitar nome "Thais"
-E sobrenome "Santiago"
-E país "Brasil"
-E endereço "Rua acm"
-E cidade "Salvador"
-E cep "41180705"
-E telefone "91711685"
-E email "thais@gmail.com"
+Quando eu preencher todos os "campos obrigatorios"
 Então finalizar compra
 
-Cenário: Dados Obrigatorios 
+Cenário: Campo obrigatorio sem preenchimento
 Dado que eu acesse a pagina de Checkout 
-Quando eu digitar nome "Thais"
-E sobrenome "Santiago"
-E país "Brasil"
-E endereço "Rua acm"
-E cidade ""
-E cep "41180705"
-E telefone ""
-E email "thais@gmail.com"
+Quando eu deixar de preencher algum "campo obrigatorio"
 Então deve aparecer mensagem "Preencher campos obrigatorios"
 
-Cenário: Email valido 
+Cenário: Email em formato invalido 
 Dado que eu acesse a pagina de Checkout
 Quando eu digitar email "thaissantiago"
 Então deve aparece mensagem "Email invalido"
